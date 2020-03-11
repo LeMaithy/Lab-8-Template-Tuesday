@@ -81,16 +81,13 @@ public class CityList {
      *
      */
 
-    public void clearCities() {
+    public boolean noCities() {
 
-        for (City c: cities) {
-            if (cities.isEmpty()) {
-                throw new IllegalArgumentException();
-            }
-            else{
-                cities.remove(c);
-            }
-
-        }
+       if (cities.isEmpty()) {
+           return true;
+       }
+        else {
+            return false;
+       }
     }
 }
