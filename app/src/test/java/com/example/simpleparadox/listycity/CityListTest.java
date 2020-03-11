@@ -97,8 +97,10 @@ class CityListTest {
     @Test
     void testNoCities() {
         CityList cityList = mockCityList();
+        City city = new City("Charlottetown", "Prince Edward Island");
+        cityList.add(city);
 
-        assertTrue(cityList.isEmpty(mockCity()));
+        assertTrue(cityList.isEmpty());
 
     }
 }

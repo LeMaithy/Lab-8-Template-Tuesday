@@ -81,14 +81,12 @@ public class CityList {
      *
      */
 
-    public boolean isEmpty(City city) {
-        for (City c : cities) {
-            if (c.getCityName().equals(city.getCityName()) &&
-                    c.getProvinceName().equals(city.getProvinceName())) {
-                return false;
-            }
+    public boolean isEmpty() {
+        if (cities.isEmpty() == false) {
+            return false;
         }
-
-        return true;
+        else {
+            return true;
+        }
     }
 }
