@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Lab-8-Template-Tuesday.iml" filepath="$PROJECT_DIR$/Lab-8-Template-Tuesday.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListyCity.iml" filepath="$PROJECT_DIR$/ListyCity.iml" group="ListyCity" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ListyCity/app" />
     </modules>
   </component>
 </project>

@@ -95,12 +95,18 @@ class CityListTest {
     }
 
     @Test
-    void testNoCities() {
+    void testNoMoreCities() {
         CityList cityList = mockCityList();
         City city = new City("Charlottetown", "Prince Edward Island");
         cityList.add(city);
 
-        assertTrue(cityList.noCities());
+        City city2 = new City("Red Deer", "Alberta");
+        cityList.add(city2);
+
+        cityList.clearCities();
+
+        assertEquals(1, cityList.countCities());
+        assertEquals(0, city.compareTo(cityList.getCities().get(0)));
 
     }
 }
