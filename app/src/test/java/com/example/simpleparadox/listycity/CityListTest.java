@@ -108,7 +108,7 @@ class CityListTest {
 //        assertEquals(1, cityList.countCities());
 //        assertEquals(0, city.compareTo(cityList.getCities().get(0)));
 
-        assertTrue(cityList.noCities());
+        assertFalse(cityList.noCities());
 
     }
 }
