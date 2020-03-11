@@ -100,7 +100,7 @@ class CityListTest {
         City city = new City("Charlottetown", "Prince Edward Island");
         cityList.add(city);
 
-        assertTrue(cityList.isEmpty());
+        assertTrue(cityList.noCities());
 
     }
 }

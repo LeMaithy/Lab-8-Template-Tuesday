@@ -81,12 +81,11 @@ public class CityList {
      *
      */
 
-    public boolean isEmpty() {
-        if (cities.isEmpty() == false) {
-            return false;
-        }
+    public boolean noCities() {
+        if (cities.isEmpty()) {
+            return true;}
         else {
-            return true;
+            return false;
         }
     }
 }
